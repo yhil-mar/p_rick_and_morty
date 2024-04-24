@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation, Navigate } from "react-router-dom";
 import { Auth, Detail, Favorites, Home, Landing } from "../views/index";
 
 function Router() {
@@ -9,7 +9,7 @@ function Router() {
 
         <Routes location={location}>
 
-            <Route path='/' element={<Landing />} />
+            <Route path='/' element={<Navigate to='/auth/login' replace={true} />} />
 
             {/* {Rutas para la autenticación con sus propias animaciones} */}
 
