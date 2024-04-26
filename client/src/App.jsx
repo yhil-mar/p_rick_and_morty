@@ -1,5 +1,5 @@
 import axios from 'axios';
-axios.defaults.baseURL = 'https://p-rick-and-morty.onrender.com';
+axios.defaults.baseURL = 'https://p-rick-and-morty-0ohh.onrender.com';
 import { Router } from './components/index.mjs';
 
 function App() {
